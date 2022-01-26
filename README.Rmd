@@ -18,6 +18,9 @@ knitr::opts_chunk$set(
 
 Install from Github.
 
+```{r eval=FALSE}
+remotes::install_github("AlexWeinreb/rshannonca")
+```
 
 ## Note on version
 

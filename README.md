@@ -3,6 +3,10 @@
 
 Install from Github.
 
+``` r
+remotes::install_github("AlexWeinreb/rshannonca")
+```
+
 ## Note on version
 
 If you have an older version of scipy (fails in 1.5, works in 1.7), you
@@ -65,7 +69,7 @@ pbmc_small <- RunSCA(pbmc_small)
 DimPlot(pbmc_small, reduction = "sca")
 ```
 
-<img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />
 
 We can directly cluster on the results of the SCA:
 
@@ -92,13 +96,13 @@ number of genes if it is smaller), we can visualize more than 2.
 DimPlot(pbmc_small, dims = 1:2, reduction = "sca")
 ```
 
-<img src="man/figures/README-unnamed-chunk-7-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-8-1.png" width="100%" />
 
 ``` r
 DimPlot(pbmc_small, dims = c(2,3), reduction = "sca")
 ```
 
-<img src="man/figures/README-unnamed-chunk-7-2.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-8-2.png" width="100%" />
 
 ``` r
 # in 3D, cannot be displayed on Github
@@ -136,7 +140,7 @@ pbmc_small <- FindClusters(pbmc_small, verbose = FALSE)
 DimPlot(pbmc_small, reduction = "pca")
 ```
 
-<img src="man/figures/README-unnamed-chunk-9-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-10-1.png" width="100%" />
 
 ``` r
 pbmc_small$pca_clusters <- pbmc_small$seurat_clusters
@@ -162,4 +166,4 @@ pbmc_small@meta.data |>
   scale_x_discrete(guide = guide_axis(angle = 90))
 ```
 
-<img src="man/figures/README-unnamed-chunk-9-2.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-10-2.png" width="100%" />
