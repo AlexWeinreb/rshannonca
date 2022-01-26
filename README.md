@@ -167,3 +167,9 @@ pbmc_small@meta.data |>
 ```
 
 <img src="man/figures/README-unnamed-chunk-10-2.png" width="100%" />
+
+# References
+
+See the [preprint describing the
+method](https://www.biorxiv.org/content/10.1101/2021.01.19.427303v4) and
+[the main website](https://cb.csail.mit.edu/cb/sca/).
