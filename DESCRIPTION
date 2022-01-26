@@ -1,0 +1,15 @@
+Package: rshannonca
+Type: Package
+Title: Wraps Surprisal Component Analysis for Dimensionality Reduction
+Version: 0.1.0
+Authors@R:
+  person("Alexis","Weinreb", email = "alexis.weinreb@yale.edu", role = c("aut", "cre"))
+Maintainer: Alexis Weinreb <alexis.weinreb@yale.edu>
+Description: Wrapper of the Python implementation of SCA (DeMeo and Berger, 2022 DOI:10.1101/2021.01.19.427303) to apply to Seurat objects. See upstream: https://github.com/bendemeo/shannonca .
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Imports: 
+    reticulate,
+    Seurat
